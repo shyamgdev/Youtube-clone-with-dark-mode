@@ -64,7 +64,7 @@
         display: none;
     }
 
-    #navbar-notification-icon, #navbar-search-icon, #navbar-account-icon {
+    #navbar-notification-icon, #navbar-search-icon, #appearance, #navbar-account-icon {
         display: flex;    
     }
 

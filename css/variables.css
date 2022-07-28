@@ -1,8 +1,4 @@
 html {
-  /* --default-hover-color: #2f2f2f;
-  --default-border-color: rgba(255, 255, 255, 0.1);
-  --default-button-hover-color: var(--default-hover-color); */
-
   --app-header-height: 60px;
   --app-drawer-width: 240px;
   --app-drawer-item-icon-width: 60px;
@@ -13,8 +9,6 @@ html {
   --app-main-content-items-gap: 20px;
   --app-main-content-item-per-row: 4;
 
-  /* --app-drawer-active-item-hover-color: #3f3f3f; */
-
   --main-content-item-profile-width: 36px;
   --main-content-item-profile-height: var(--main-content-item-profile-width);
 
@@ -22,85 +16,58 @@ html {
   --bottom-navigation-height: 60px;
 }
 
-/* @media (prefers-color-scheme: light) {
-  [day], [night] {
-    display: none;
-  }
+html,
+html[light] {
+  --webkit-scrollbar-thumb-background-color: #393636;
 
-  [day] {
-    display: block;
-  }
+  --app-background: #f9f9f9;
 
-  html {
-    color: #030303;
-    background-color: #f9f9f9;
-  } */
+  --default-text-color: #030303;
+  --default-border-color: rgba(0, 0, 0, 0.1);
+  --default-hover-color: rgba(0, 0, 0, 0.1);
+  --default-button-hover-color: var(--default-hover-color);
+  --default-active-button-hover-color: rgba(0, 0, 0, 0.5);
 
-  html, html[light] {
-    --webkit-scrollbar-thumb-background-color: #393636;
-    
-    --app-background: #f9f9f9;
+  --searchbox-text-color: hsl(0, 0%, 7%);
+  --searchbox-background: hsla(0, 100%, 100%, 0.88);
+  --searchbox-border-color: #ccc;
+  --searchbox-button-border-color: var(--searchbox-border-color);
 
-    --default-text-color: #030303;
-    --default-border-color: rgba(0, 0, 0, 0.1);
-    --default-hover-color: rgba(0, 0, 0, 0.1);
-    --default-button-hover-color: var(--default-hover-color);
-    --default-active-button-hover-color: rgba(0, 0, 0, 0.5);
+  --menu-background-color: #fff;
 
-    --searchbox-text-color: hsl(0, 0%, 7%);
-    --searchbox-background:  hsla(0, 100%, 100%, 0.88);
-    --searchbox-border-color: #ccc;
-    --searchbox-button-border-color: var(--searchbox-border-color);
+  --navbar-search-background-color: #fff;
 
-    --menu-background-color: #fff;
-
-    --navbar-search-background-color: #fff;
-
-    --filter-wrapper-content-background: rgba(0, 0, 0, 0.05);
-    --filter-wrapper-content-active-background-color: var(--default-text-color);
-    --filter-wrapper-content-active-hover-background: #000;
-    --filter-wrapper-content-active-text-color: #fff;
-    --filter-wrapper-content-hover-background: rgba(0, 0, 0, 0.1);
-  }
-/* } */
-
-/* @media (prefers-color-scheme: dark) {
-  [night], [day] {
-    display: none;
-  }
-
-  [night] {
-    display: block;
-  }
-  
-  html {
-    color: #fff;
-    background-color: #181818;
-  } */
-
-  html, html[dark] {
-    --webkit-scrollbar-thumb-background-color: #DBDBDB;
-    --app-background: #181818;
-
-    --default-text-color: #fff;
-    --default-hover-color: #2f2f2f;
-    --default-border-color: rgba(255, 255, 255, 0.1);
-    --default-button-hover-color: var(--default-hover-color);
-    --default-active-button-hover-color: var(--default-hover-color);
+  --filter-wrapper-content-background: rgba(0, 0, 0, 0.05);
+  --filter-wrapper-content-active-background-color: var(--default-text-color);
+  --filter-wrapper-content-active-hover-background: #000;
+  --filter-wrapper-content-active-text-color: #fff;
+  --filter-wrapper-content-hover-background: rgba(0, 0, 0, 0.1);
+}
 
 
-    --menu-background-color: #212121;
-    --navbar-search-background-color: #000;
-    --searchbox-text-color: hsla(0, 100%, 100%, 0.88);
-    --searchbox-background: hsl(0, 0%, 7%);
-    --searchbox-border-color: hsla(0, 0%, 53.3%, 0.4);
-    --searchbox-button-background-color: hsla(0, 0%, 100%, 0.08);
-    --searchbox-button-border-color: hsl(0, 0%, 18.82%);
-    --filter-wrapper-content-background: rgba(255, 255, 255, 0.1);
-    --filter-wrapper-content-hover-background: rgba(255, 255, 255, 0.2);
-    --filter-wrapper-content-active-background-color: #fff;
-    --filter-wrapper-content-active-hover-background: #fff;
-    --filter-wrapper-content-active-text-color: #030303;
-    --secondary-text-color: #aaa;
-  }
-/* } */
+html,
+html[dark] {
+  --webkit-scrollbar-thumb-background-color: #DBDBDB;
+  --app-background: #181818;
+
+  --default-text-color: #fff;
+  --default-hover-color: #2f2f2f;
+  --default-border-color: rgba(255, 255, 255, 0.1);
+  --default-button-hover-color: var(--default-hover-color);
+  --default-active-button-hover-color: var(--default-hover-color);
+
+
+  --menu-background-color: #212121;
+  --navbar-search-background-color: #000;
+  --searchbox-text-color: hsla(0, 100%, 100%, 0.88);
+  --searchbox-background: hsl(0, 0%, 7%);
+  --searchbox-border-color: hsla(0, 0%, 53.3%, 0.4);
+  --searchbox-button-background-color: hsla(0, 0%, 100%, 0.08);
+  --searchbox-button-border-color: hsl(0, 0%, 18.82%);
+  --filter-wrapper-content-background: rgba(255, 255, 255, 0.1);
+  --filter-wrapper-content-hover-background: rgba(255, 255, 255, 0.2);
+  --filter-wrapper-content-active-background-color: #fff;
+  --filter-wrapper-content-active-hover-background: #fff;
+  --filter-wrapper-content-active-text-color: #030303;
+  --secondary-text-color: #aaa;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dark>
+<html lang="en" light>
 
 <head>
   <meta charset="UTF-8">
@@ -59,7 +59,12 @@
             <div title="Notifications" id="navbar-notification-icon" class="navbar-right-button flex-all-center">
               <ion-icon name="notifications-outline"></ion-icon>
             </div>
-            <div title="Account" id="navbar-account-icon" class="navbar-right-button flex-all-center">
+            <div onclick="darkMode()" title="switch to dark mode" id="appearance"
+              class="navbar-right-button flex-all-center">
+              <ion-icon name="moon-outline"></ion-icon>
+            </div>
+            <div title="Account" id="navbar-account-icon"
+              class="navbar-right-button flex-all-center">
               <ion-icon name="person-circle-outline"></ion-icon>
             </div>
           </div>
@@ -68,156 +73,156 @@
     </section>
 
     <section class="app-main-content-section flex-hr-center">
-        <div class="app-drawer-section flex-all-center">
-          <div class="app-drawer">
-            <div class="app-drawer-items">
-              <div title="Home" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="home-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">Home</span>
-                  </div>
-                </a>
-              </div>
-              <div title="Explore" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="compass-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">Explore</span>
-                  </div>
-                </a>
-              </div>
-              <div title="Shorts" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="flame-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">Shorts</span>
-                  </div>
-                </a>
-              </div>
-              <div title="Subscriptions" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="albums-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">Subscriptions</span>
-                  </div>
-                </a>
-              </div>
-              <div title="Library" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="library-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">Library</span>
-                  </div>
-                </a>
-              </div>
-              <div title="History" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="time-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">History</span>
-                  </div>
-                </a>
-              </div>
-              <div title="Your videos" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="play-circle-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">Your videos</span>
-                  </div>
-                </a>
-              </div>
-              <div title="Watch later" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="time-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">Watch later</span>
-                  </div>
-                </a>
-              </div>
-              <div title="Liked videos" class="app-drawer-item">
-                <a class="app-drawer-item-content flex-vr-center" href="#">
-                  <div class="app-drawer-item-icon flex-vr-center">
-                    <ion-icon name="thumbs-up-outline"></ion-icon>
-                  </div>
-                  <div class="app-drawer-item-name flex-vr-center">
-                    <span class="title">Liked videos</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navigation">
-          <div class="navigation-items flex-vr-center">
-            <div title="Home" class="navigation-item flex-all-center">
-              <a class="navigation-item-content flex-all-center" href="#">
-                <div class="navigation-item-icon flex-all-center">
-                  <ion-icon name="home"></ion-icon>
+      <div class="app-drawer-section flex-all-center">
+        <div class="app-drawer">
+          <div class="app-drawer-items">
+            <div title="Home" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
+                  <ion-icon name="home-outline"></ion-icon>
                 </div>
-                <div class="navigation-item-name flex-all-center">
+                <div class="app-drawer-item-name flex-vr-center">
                   <span class="title">Home</span>
                 </div>
               </a>
             </div>
-            <div title="Explore" class="navigation-item flex-all-center">
-              <a class="navigation-item-content flex-all-center" href="#">
-                <div class="navigation-item-icon flex-all-center">
+            <div title="Explore" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
                   <ion-icon name="compass-outline"></ion-icon>
                 </div>
-                <div class="navigation-item-name flex-all-center">
+                <div class="app-drawer-item-name flex-vr-center">
                   <span class="title">Explore</span>
                 </div>
               </a>
             </div>
-            <div title="Shorts" class="navigation-item flex-all-center">
-              <a class="navigation-item-content flex-all-center" href="#">
-                <div class="navigation-item-icon flex-all-center">
+            <div title="Shorts" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
                   <ion-icon name="flame-outline"></ion-icon>
                 </div>
-                <div class="navigation-item-name flex-all-center">
+                <div class="app-drawer-item-name flex-vr-center">
                   <span class="title">Shorts</span>
                 </div>
               </a>
             </div>
-            <div title="Subscriptions" class="navigation-item flex-all-center">
-              <a class="navigation-item-content flex-all-center" href="#">
-                <div class="navigation-item-icon flex-all-center">
+            <div title="Subscriptions" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
                   <ion-icon name="albums-outline"></ion-icon>
                 </div>
-                <div class="navigation-item-name flex-all-center">
+                <div class="app-drawer-item-name flex-vr-center">
                   <span class="title">Subscriptions</span>
                 </div>
               </a>
             </div>
-            <div title="Library" class="navigation-item flex-all-center">
-              <a class="navigation-item-content flex-all-center" href="#">
-                <div class="navigation-item-icon flex-all-center">
+            <div title="Library" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
                   <ion-icon name="library-outline"></ion-icon>
                 </div>
-                <div class="navigation-item-name flex-all-center">
+                <div class="app-drawer-item-name flex-vr-center">
                   <span class="title">Library</span>
+                </div>
+              </a>
+            </div>
+            <div title="History" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
+                  <ion-icon name="time-outline"></ion-icon>
+                </div>
+                <div class="app-drawer-item-name flex-vr-center">
+                  <span class="title">History</span>
+                </div>
+              </a>
+            </div>
+            <div title="Your videos" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                </div>
+                <div class="app-drawer-item-name flex-vr-center">
+                  <span class="title">Your videos</span>
+                </div>
+              </a>
+            </div>
+            <div title="Watch later" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
+                  <ion-icon name="time-outline"></ion-icon>
+                </div>
+                <div class="app-drawer-item-name flex-vr-center">
+                  <span class="title">Watch later</span>
+                </div>
+              </a>
+            </div>
+            <div title="Liked videos" class="app-drawer-item">
+              <a class="app-drawer-item-content flex-vr-center" href="#">
+                <div class="app-drawer-item-icon flex-vr-center">
+                  <ion-icon name="thumbs-up-outline"></ion-icon>
+                </div>
+                <div class="app-drawer-item-name flex-vr-center">
+                  <span class="title">Liked videos</span>
                 </div>
               </a>
             </div>
           </div>
         </div>
+      </div>
+      <div class="navigation">
+        <div class="navigation-items flex-vr-center">
+          <div title="Home" class="navigation-item flex-all-center">
+            <a class="navigation-item-content flex-all-center" href="#">
+              <div class="navigation-item-icon flex-all-center">
+                <ion-icon name="home"></ion-icon>
+              </div>
+              <div class="navigation-item-name flex-all-center">
+                <span class="title">Home</span>
+              </div>
+            </a>
+          </div>
+          <div title="Explore" class="navigation-item flex-all-center">
+            <a class="navigation-item-content flex-all-center" href="#">
+              <div class="navigation-item-icon flex-all-center">
+                <ion-icon name="compass-outline"></ion-icon>
+              </div>
+              <div class="navigation-item-name flex-all-center">
+                <span class="title">Explore</span>
+              </div>
+            </a>
+          </div>
+          <div title="Shorts" class="navigation-item flex-all-center">
+            <a class="navigation-item-content flex-all-center" href="#">
+              <div class="navigation-item-icon flex-all-center">
+                <ion-icon name="flame-outline"></ion-icon>
+              </div>
+              <div class="navigation-item-name flex-all-center">
+                <span class="title">Shorts</span>
+              </div>
+            </a>
+          </div>
+          <div title="Subscriptions" class="navigation-item flex-all-center">
+            <a class="navigation-item-content flex-all-center" href="#">
+              <div class="navigation-item-icon flex-all-center">
+                <ion-icon name="albums-outline"></ion-icon>
+              </div>
+              <div class="navigation-item-name flex-all-center">
+                <span class="title">Subscriptions</span>
+              </div>
+            </a>
+          </div>
+          <div title="Library" class="navigation-item flex-all-center">
+            <a class="navigation-item-content flex-all-center" href="#">
+              <div class="navigation-item-icon flex-all-center">
+                <ion-icon name="library-outline"></ion-icon>
+              </div>
+              <div class="navigation-item-name flex-all-center">
+                <span class="title">Library</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="main-content">
         <div class="filter-content flex-vr-center">
           <div class="filter-wrapper flex-vr-center">
@@ -240,15 +245,15 @@
         </div>
         <div class="main-content-items flex-hr-center">
           <div class="main-content-item">
-          <div class="main-content-item-hover">
-            <a href="#" class="main-content-item-thumbnail-link">
-              <div class="main-content-item-thumbnail">
-                <img
-                  src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
-                  alt="">
-              </div>
-            </a>
-            <div class="main-content-item-details">
+            <div class="main-content-item-hover">
+              <a href="#" class="main-content-item-thumbnail-link">
+                <div class="main-content-item-thumbnail">
+                  <img
+                    src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
+                    alt="">
+                </div>
+              </a>
+              <div class="main-content-item-details">
                 <div class="left-item-details">
                   <a href="#" class="main-content-item-profile-link">
                     <div class="main-content-item-profile">
@@ -271,18 +276,18 @@
                   </a>
                 </div>
               </div>
+            </div>
           </div>
-        </div>
           <div class="main-content-item">
-          <div class="main-content-item-hover">
-            <a href="#" class="main-content-item-thumbnail-link">
-              <div class="main-content-item-thumbnail">
-                <img
-                  src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
-                  alt="">
-              </div>
-            </a>
-            <div class="main-content-item-details">
+            <div class="main-content-item-hover">
+              <a href="#" class="main-content-item-thumbnail-link">
+                <div class="main-content-item-thumbnail">
+                  <img
+                    src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
+                    alt="">
+                </div>
+              </a>
+              <div class="main-content-item-details">
                 <div class="left-item-details">
                   <a href="#" class="main-content-item-profile-link">
                     <div class="main-content-item-profile">
@@ -305,18 +310,18 @@
                   </a>
                 </div>
               </div>
+            </div>
           </div>
-        </div>
           <div class="main-content-item">
-          <div class="main-content-item-hover">
-            <a href="#" class="main-content-item-thumbnail-link">
-              <div class="main-content-item-thumbnail">
-                <img
-                  src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
-                  alt="">
-              </div>
-            </a>
-            <div class="main-content-item-details">
+            <div class="main-content-item-hover">
+              <a href="#" class="main-content-item-thumbnail-link">
+                <div class="main-content-item-thumbnail">
+                  <img
+                    src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
+                    alt="">
+                </div>
+              </a>
+              <div class="main-content-item-details">
                 <div class="left-item-details">
                   <a href="#" class="main-content-item-profile-link">
                     <div class="main-content-item-profile">
@@ -339,18 +344,18 @@
                   </a>
                 </div>
               </div>
+            </div>
           </div>
-        </div>
           <div class="main-content-item">
-          <div class="main-content-item-hover">
-            <a href="#" class="main-content-item-thumbnail-link">
-              <div class="main-content-item-thumbnail">
-                <img
-                  src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
-                  alt="">
-              </div>
-            </a>
-            <div class="main-content-item-details">
+            <div class="main-content-item-hover">
+              <a href="#" class="main-content-item-thumbnail-link">
+                <div class="main-content-item-thumbnail">
+                  <img
+                    src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
+                    alt="">
+                </div>
+              </a>
+              <div class="main-content-item-details">
                 <div class="left-item-details">
                   <a href="#" class="main-content-item-profile-link">
                     <div class="main-content-item-profile">
@@ -373,18 +378,18 @@
                   </a>
                 </div>
               </div>
+            </div>
           </div>
-        </div>
           <div class="main-content-item">
-          <div class="main-content-item-hover">
-            <a href="#" class="main-content-item-thumbnail-link">
-              <div class="main-content-item-thumbnail">
-                <img
-                  src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
-                  alt="">
-              </div>
-            </a>
-            <div class="main-content-item-details">
+            <div class="main-content-item-hover">
+              <a href="#" class="main-content-item-thumbnail-link">
+                <div class="main-content-item-thumbnail">
+                  <img
+                    src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
+                    alt="">
+                </div>
+              </a>
+              <div class="main-content-item-details">
                 <div class="left-item-details">
                   <a href="#" class="main-content-item-profile-link">
                     <div class="main-content-item-profile">
@@ -407,18 +412,18 @@
                   </a>
                 </div>
               </div>
+            </div>
           </div>
-        </div>
           <div class="main-content-item">
-          <div class="main-content-item-hover">
-            <a href="#" class="main-content-item-thumbnail-link">
-              <div class="main-content-item-thumbnail">
-                <img
-                  src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
-                  alt="">
-              </div>
-            </a>
-            <div class="main-content-item-details">
+            <div class="main-content-item-hover">
+              <a href="#" class="main-content-item-thumbnail-link">
+                <div class="main-content-item-thumbnail">
+                  <img
+                    src="https://i.ytimg.com/vi/GpP6LYX9IjU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCK9_6D9U3ax2o3HE4x21d2EOt4-Q"
+                    alt="">
+                </div>
+              </a>
+              <div class="main-content-item-details">
                 <div class="left-item-details">
                   <a href="#" class="main-content-item-profile-link">
                     <div class="main-content-item-profile">
@@ -441,14 +446,30 @@
                   </a>
                 </div>
               </div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       </div>
     </section>
   </section>
 
+  <script>
+    function darkMode() {
+      const html = document.querySelector('html');
+      const appearance = document.querySelector('#appearance')
+      
+      html.toggleAttribute("light")
+      html.toggleAttribute("dark")
+      
+      if(html.getAttribute("dark") != null) {
+        appearance.title = "switch to dark mode"  
+      }
+      else {
+        appearance.title = "switch to light mode"
+      }
+    }
+  </script>
 </body>
 
 </html>
